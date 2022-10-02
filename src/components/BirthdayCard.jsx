@@ -8,7 +8,6 @@ import { HiOutlineChevronRight } from "react-icons/hi";
 const BirthdayCard = () => {
   return (
     <div>
-      {" "}
       <div className="bg-[#F6F2FF] w-[350px] mx-auto rounded-lg overflow-hidden">
         <img src={Birthdaycake} alt="Birth Day cake" className="w-full" />
         <div className="p-4">
@@ -91,7 +90,7 @@ const BirthdayCard = () => {
           </div>
         </div>
       </div>
-      <div className="py-8 text-center">
+      <div className="py-8 text-center lg:hidden">
         <Link to="/create">
           <button className="py-3 px-5 text-xl bg-gradient-to-r from-[#8456EC] to-[#E87BF8] rounded-xl text-bold text-white ">
             <span>🎉</span> Create my Event
