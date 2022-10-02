@@ -1,10 +1,11 @@
 import React from "react";
 import BirthdayCard from "../components/BirthdayCard";
 import { Link } from "react-router-dom";
+import Button from "../components/Button";
 
 const Home = () => {
   return (
-    <div className="bg-[#EDE5FF] h-full w-full lg:flex lg:items-center lg:justify-center">
+    <div className="bg-[#EDE5FF]  w-full lg:flex lg:items-center lg:justify-center">
       <div className="w-full lg:max-w-[1100px] lg:mx-auto flex flex-col items-center lg:flex-row-reverse lg:items-start lg:justify-between">
         <div className="py-20 px-4 lg:pt-40">
           <h1 className="text-4xl md:text-6xl font-bold text-[#240D57] text-center tracking-wide lg:text-right">
@@ -20,9 +21,7 @@ const Home = () => {
           </p>
           <div className="py-8 text-center hidden lg:flex lg:justify-end">
             <Link to="/create">
-              <button className="py-3 px-5 text-xl bg-gradient-to-r from-[#8456EC] to-[#E87BF8] rounded-xl text-bold text-white ">
-                <span>🎉</span> Create my Event
-              </button>
+              <Button />
             </Link>
           </div>
         </div>

@@ -5,13 +5,15 @@ import Event from "./pages/Event";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/create" element={<CreateEvent />} />
-        <Route path="/event" element={<Event />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="bg-[#FBFAFF] w-full">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/create" element={<CreateEvent />} />
+          <Route path="/event" element={<Event />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

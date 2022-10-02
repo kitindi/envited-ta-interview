@@ -4,6 +4,7 @@ import Birthdaycake from "../img/Birthdaycake.png";
 import { ImCalendar, ImLocation, ImLink } from "react-icons/im";
 //Used heroicons because I couldn.t get an arrow icon from theicons recommended for this project
 import { HiOutlineChevronRight } from "react-icons/hi";
+import Button from "./Button";
 
 const BirthdayCard = () => {
   return (
@@ -92,9 +93,7 @@ const BirthdayCard = () => {
       </div>
       <div className="py-8 text-center lg:hidden">
         <Link to="/create">
-          <button className="py-3 px-5 text-xl bg-gradient-to-r from-[#8456EC] to-[#E87BF8] rounded-xl text-bold text-white ">
-            <span>🎉</span> Create my Event
-          </button>
+          <Button />
         </Link>
       </div>
     </div>
